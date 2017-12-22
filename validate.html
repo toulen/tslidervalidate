@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #canvas{
+            width: 200px;
+            height: 40px;
+            /*background: #999;*/
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas"></canvas>
+
+<script src="./jquery-1.11.3.min.js"></script>
+
+<script src="./TsliderVlidate.js"></script>
+
+<script>
+    $('#canvas').TsliderValidate({
+        id: 'canvas',
+        canvasWidth: 200,
+        canvasHeight: 40,
+        openKey: 1,
+        sliderLeft: 10,
+        sliderTop: 10,
+        sliderImg: './images/slider.png',
+        sliderImgWidth: 48,
+        sliderImgHeight: 48,
+        okImg: './images/ok.png',
+        okImgWidth: 60,
+        okImgHeight: 60,
+        openFuc: function (){
+            alert(1)
+        }
+    })
+</script>
+</body>
+</html>
